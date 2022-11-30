@@ -15,43 +15,46 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 
 	<body>
 		<header class="header">
-			<div class="container main-nav">
-				<nav class="site-nav">
-					<a href="./index.html" class="logo" lang="en">
-						Web<span class="logo-header">Studio</span>
+			<div class="container header__box">
+				<nav class="nav">
+					<a href="./index.html" class="logo link header__logo" lang="en">
+						Web
+						<span class="logo__text">Studio</span>
 					</a>
 
-					<ul class="site-nav list">
-						<li class="item">
-							<a href="./index.html" class="nav-link link">Студія</a>
+					<ul class="list nav__list">
+						<li class="nav__item">
+							<a href="./index.html" class="nav__link link">Студія</a>
 						</li>
-						<li class="item">
-							<a href="./portfolio.html" class="nav-link link current">Портфоліо</a>
+						<li class="nav__item">
+							<a href="./portfolio.html" class="nav__link link nav__link--current">Портфоліо</a>
 						</li>
-						<li class="item">
-							<a href="#" class="nav-link link">Контакти</a>
+						<li class="nav__item">
+							<a href="#" class="nav__link link">Контакти</a>
 						</li>
 					</ul>
 				</nav>
 
-				<ul class="header-contacts list">
-					<li class="item">
-						<a href="mailto:info@devstudio.com" class="header-mail link">
-							<svg width="16px" height="12px" class="icon">
+				<ul class="contacts-list list header__contacts-list">
+					<li class="contacts-list__item">
+						<a href="mailto:info@devstudio.com" class="contacts-list__link link">
+							<svg width="16px" height="12px" class="icon contacts-list__icon">
 								<use href="./images/icons.svg#mail"></use>
-							</svg>info@devstudio.com
+							</svg>
+							info@devstudio.com
 						</a>
 					</li>
-					<li class="item">
-						<a href="tel:+380961111111" class="header-phone link">
-							<svg width="10px" height="16px" class="icon">
+					<li class="contacts-list__item">
+						<a href="tel:+380961111111" class="contacts-list__link link">
+							<svg width="10px" height="16px" class="icon contacts-list__icon">
 								<use href="./images/icons.svg#smartphone"></use>
-							</svg>+38 096 111 11 11
+							</svg>
+							+38 096 111 11 11
 						</a>
 					</li>
 				</ul>
@@ -59,37 +62,37 @@
 		</header>
 
 		<main>
-			<section class="section">
+			<section class="section portfolio">
 				<div class="container">
-					<h1 class="portfolio-title visually-hidden">Портфоліо</h1>
-					<ul class="btn-nav list">
-						<li><button type="button" class="button-portfolio">Усі</button></li>
+					<h1 class="portfolio__title visually-hidden">Портфоліо</h1>
+					<ul class="portfolio__nav list">
+						<li><button type="button" class="portfolio__btn">Усі</button></li>
 						<li>
-							<button type="button" class="button-portfolio">Веб-сайти</button>
+							<button type="button" class="portfolio__btn">Веб-сайти</button>
 						</li>
 						<li>
-							<button type="button" class="button-portfolio">Додатки</button>
+							<button type="button" class="portfolio__btn">Додатки</button>
 						</li>
 						<li>
-							<button type="button" class="button-portfolio">Дизайн</button>
+							<button type="button" class="portfolio__btn">Дизайн</button>
 						</li>
 						<li>
-							<button type="button" class="button-portfolio">Маркетинг</button>
+							<button type="button" class="portfolio__btn">Маркетинг</button>
 						</li>
 					</ul>
 
-					<ul class="work-list list">
-						<li class="portfolio-item">
-							<a href="" class="link">
-								<div class="work-thumb">
+					<ul class="grid list">
+						<li class="grid__item">
+							<a href="" class="product link">
+								<div class="product__thumb">
 									<img
 										src="./images/example-1.jpg"
 										alt=""
 										width="370"
 										height="294"
-										class="example-photo"
+										class="product__photo"
 									/>
-									<div class="work-overflow">
+									<div class="product__overflow">
 										<p>
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -97,23 +100,23 @@
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-contents">
-									<h2 class="portfolio-subtitle">Технокряк</h2>
-									<p class="portfolio-text">Веб-сайт</p>
+								<div class="product__contents">
+									<h2 class="product__subtitle">Технокряк</h2>
+									<p class="product__text">Веб-сайт</p>
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-item">
-							<a href="" class="link">
-								<div class="work-thumb">
+						<li class="grid__item">
+							<a href="" class="product link">
+								<div class="product__thumb">
 									<img
 										src="./images/example-2.jpg"
 										alt=""
 										width="370"
 										height="294"
-										class="example-photo"
+										class="product__photo"
 									/>
-									<div class="work-overflow">
+									<div class="product__overflow">
 										<p>
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -121,23 +124,23 @@
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-contents">
-									<h2 class="portfolio-subtitle">Постер New Orlean vs Golden Star</h2>
-									<p class="portfolio-text">Дизайн</p>
+								<div class="product__contents">
+									<h2 class="product__subtitle">Постер New Orlean vs Golden Star</h2>
+									<p class="product__text">Дизайн</p>
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-item">
-							<a href="" class="link">
-								<div class="work-thumb">
+						<li class="grid__item">
+							<a href="" class="product link">
+								<div class="product__thumb">
 									<img
 										src="./images/example-3.jpg"
 										alt=""
 										width="370"
 										height="294"
-										class="example-photo"
+										class="product__photo"
 									/>
-									<div class="work-overflow">
+									<div class="product__overflow">
 										<p>
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -145,23 +148,23 @@
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-contents">
-									<h2 class="portfolio-subtitle">Ресторан Seafood</h2>
-									<p class="portfolio-text">Додаток</p>
+								<div class="product__contents">
+									<h2 class="product__subtitle">Ресторан Seafood</h2>
+									<p class="product__text">Додаток</p>
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-item">
-							<a href="" class="link">
-								<div class="work-thumb">
+						<li class="grid__item">
+							<a href="" class="product link">
+								<div class="product__thumb">
 									<img
 										src="./images/example-4.jpg"
 										alt=""
 										width="370"
 										height="294"
-										class="example-photo"
+										class="product__photo"
 									/>
-									<div class="work-overflow">
+									<div class="product__overflow">
 										<p>
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -169,23 +172,23 @@
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-contents">
-									<h2 class="portfolio-subtitle">Проєкт Prime</h2>
-									<p class="portfolio-text">Маркетинг</p>
+								<div class="product__contents">
+									<h2 class="product__subtitle">Проєкт Prime</h2>
+									<p class="product__text">Маркетинг</p>
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-item">
-							<a href="" class="link">
-								<div class="work-thumb">
+						<li class="grid__item">
+							<a href="" class="product link">
+								<div class="product__thumb">
 									<img
 										src="./images/example-5.jpg"
 										alt=""
 										width="370"
 										height="294"
-										class="example-photo"
+										class="product__photo"
 									/>
-									<div class="work-overflow">
+									<div class="product__overflow">
 										<p>
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -193,23 +196,23 @@
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-contents">
-									<h2 class="portfolio-subtitle">Проєкт Boxes</h2>
-									<p class="portfolio-text">Додаток</p>
+								<div class="product__contents">
+									<h2 class="product__subtitle">Проєкт Boxes</h2>
+									<p class="product__text">Додаток</p>
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-item">
-							<a href="" class="link">
-								<div class="work-thumb">
+						<li class="grid__item">
+							<a href="" class="product link">
+								<div class="product__thumb">
 									<img
 										src="./images/example-6.jpg"
 										alt=""
 										width="370"
 										height="294"
-										class="example-photo"
+										class="product__photo"
 									/>
-									<div class="work-overflow">
+									<div class="product__overflow">
 										<p>
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -217,23 +220,23 @@
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-contents">
-									<h2 class="portfolio-subtitle">Inspiration has no Borders</h2>
-									<p class="portfolio-text">Веб-сайт</p>
+								<div class="product__contents">
+									<h2 class="product__subtitle">Inspiration has no Borders</h2>
+									<p class="product__text">Веб-сайт</p>
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-item">
-							<a href="" class="link">
-								<div class="work-thumb">
+						<li class="grid__item">
+							<a href="" class="product link">
+								<div class="product__thumb">
 									<img
 										src="./images/example-7.jpg"
 										alt=""
 										width="370"
 										height="294"
-										class="example-photo"
+										class="product__photo"
 									/>
-									<div class="work-overflow">
+									<div class="product__overflow">
 										<p>
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -241,23 +244,23 @@
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-contents">
-									<h2 class="portfolio-subtitle">Видання Limited Edition</h2>
-									<p class="portfolio-text">Дизайн</p>
+								<div class="product__contents">
+									<h2 class="product__subtitle">Видання Limited Edition</h2>
+									<p class="product__text">Дизайн</p>
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-item">
-							<a href="" class="link">
-								<div class="work-thumb">
+						<li class="grid__item">
+							<a href="" class="product link">
+								<div class="product__thumb">
 									<img
 										src="./images/example-8.jpg"
 										alt=""
 										width="370"
 										height="294"
-										class="example-photo"
+										class="product__photo"
 									/>
-									<div class="work-overflow">
+									<div class="product__overflow">
 										<p>
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -265,23 +268,23 @@
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-contents">
-									<h2 class="portfolio-subtitle">Проєкт LAB</h2>
-									<p class="portfolio-text">Маркетинг</p>
+								<div class="product__contents">
+									<h2 class="product__subtitle">Проєкт LAB</h2>
+									<p class="product__text">Маркетинг</p>
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-item">
-							<a href="" class="link">
-								<div class="work-thumb">
+						<li class="grid__item">
+							<a href="" class="product link">
+								<div class="product__thumb">
 									<img
 										src="./images/example-9.jpg"
 										alt=""
 										width="370"
 										height="294"
-										class="example-photo"
+										class="product__photo"
 									/>
-									<div class="work-overflow">
+									<div class="product__overflow">
 										<p>
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -289,9 +292,9 @@
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-contents">
-									<h2 class="portfolio-subtitle">Growing Business</h2>
-									<p class="portfolio-text">Додаток</p>
+								<div class="product__contents">
+									<h2 class="product__subtitle">Growing Business</h2>
+									<p class="product__text">Додаток</p>
 								</div>
 							</a>
 						</li>
@@ -301,58 +304,61 @@
 		</main>
 
 		<footer class="footer">
-			<div class="container footer-info">
-				<div class="address">
-					<a href="#" class="logo link" lang="en">
-						Web<span class="logo-footer">Studio</span>
+			<div class="container footer__container">
+				<div class="footer__address">
+					<a href="#" class="logo link footer__logo" lang="en">
+						Web
+						<span class="logo__end logo__end--inversion">Studio</span>
 					</a>
-					<address>
-						<ul class="address-list list">
-							<li class="item">
+					<address class="address">
+						<ul class="address__list list">
+							<li class="address__item">
 								<a
 									href="https://goo.gl/maps/oowRSP1f97N3DCgt7"
 									target="_blank"
-									class="footer-address link"
+									class="address__link address__link--white link"
 									rel="noopener noreferrer"
 								>
 									м. Київ, пр-т Лесі Українки, 26
 								</a>
 							</li>
-							<li class="item">
-								<a href="mailto:info@devstudio.com" class="footer-mail link">info@devstudio.com</a>
+							<li class="address__item">
+								<a href="mailto:info@devstudio.com" class="address__link link">
+									info@devstudio.com
+								</a>
 							</li>
-							<li class="item">
-								<a href="tel:+380961111111" class="footer-phone link">+38 096 111 11 11</a>
+							<li class="address__item">
+								<a href="tel:+380961111111" class="address__link link">+38 096 111 11 11</a>
 							</li>
 						</ul>
 					</address>
 				</div>
-				<div class="social">
-					<p class="social-text">приєднуйтесь</p>
-					<ul class="list social-list">
-						<li class="list-item">
-							<a href="" class="link social-link">
+				<div class="footer__social">
+					<p class="footer__text">приєднуйтесь</p>
+					<ul class="list socials">
+						<li class="socials__item">
+							<a href="" class="link socials__link socials__link--theme-footer">
 								<svg width="20" height="20" class="icon">
 									<use href="./images/icons.svg#instagram"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="list-item">
-							<a href="" class="link social-link">
+						<li class="socials__item">
+							<a href="" class="link socials__link socials__link--theme-footer">
 								<svg width="20" height="20" class="icon">
 									<use href="./images/icons.svg#facebook"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="list-item">
-							<a href="" class="link social-link">
+						<li class="socials__item">
+							<a href="" class="link socials__link socials__link--theme-footer">
 								<svg width="20" height="20" class="icon">
 									<use href="./images/icons.svg#twitter"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="list-item">
-							<a href="" class="link social-link">
+						<li class="socials__item">
+							<a href="" class="link socials__link socials__link--theme-footer">
 								<svg width="20" height="20" class="icon">
 									<use href="./images/icons.svg#linkedin"></use>
 								</svg>
@@ -362,15 +368,15 @@
 				</div>
 
 				<form name="subscribe-form" class="subscribe-form">
-					<strong class="subscribe-title">Підпишіться на розсилку</strong>
-					<div class="subscribe-wrapper">
-						<label class="subscribe">
-							<input type="email" name="mail" class="input" placeholder="E-mail" />
+					<strong class="subscribe-form__title">Підпишіться на розсилку</strong>
+					<div class="subscribe-form__wrapper">
+						<label class="subscribe-form__label">
+							<input type="email" name="mail" class="subscribe-form__input" placeholder="E-mail" />
 						</label>
 
-						<button type="submit" class="subscribe-btn">
+						<button type="submit" class="button subscribe-form__btn">
 							Підписатися
-							<svg width="24" height="24" class="icon">
+							<svg width="24" height="24" class="icon subscribe-form__icon">
 								<use href="./images/icons.svg#send"></use>
 							</svg>
 						</button>
